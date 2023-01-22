@@ -64,5 +64,5 @@ mySprite = sprites.create(img`
     ........................
     ........................
     `, SpriteKind.Player)
-mySprite.sayText("Want a taco?")
+mySprite.sayText("Want a taco?", 2000, true)
 controller.moveSprite(mySprite)
