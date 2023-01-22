@@ -34,7 +34,6 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
         ................................
         `, mySprite, randint(-50, 50), randint(-50, 50))
     projectile.setScale(0.25, ScaleAnchor.Middle)
-    projectile.setBounceOnWall(true)
 })
 let projectile: Sprite = null
 let mySprite: Sprite = null
@@ -64,5 +63,4 @@ mySprite = sprites.create(img`
     ........................
     ........................
     `, SpriteKind.Player)
-mySprite.sayText("Want a taco?", 2000, true)
 controller.moveSprite(mySprite)
