@@ -34,6 +34,7 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
         ................................
         `, mySprite, randint(-50, 50), randint(-50, 50))
     projectile.setScale(0.25, ScaleAnchor.Middle)
+    projectile.setBounceOnWall(true)
 })
 let projectile: Sprite = null
 let mySprite: Sprite = null
